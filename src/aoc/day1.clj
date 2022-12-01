@@ -29,7 +29,3 @@
        (reduce +)
        (format "Largest 3 Calorie Chunks: %d")
        (println)))
-
-(defn run
-  [run-type]
-  (aoc.utils/run-day 1 run-type process-part-one process-part-two))

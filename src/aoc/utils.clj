@@ -3,6 +3,13 @@
 
 (defn parse-int [ s ] (Integer/parseInt s))
 
+(defn try-parse-int [s]
+  (if (integer? s) s
+      (try
+        (parse-int s)
+        (catch NumberFormatException _ nil))))
+
+(defn raise [msg] (throw (ex-info msg {})))
 
 (defn chunk-lines-by-blank
   "Given a seq of lines, assumes that chunks of lines are separated by a blank line

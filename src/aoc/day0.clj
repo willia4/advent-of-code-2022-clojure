@@ -31,7 +31,3 @@
        (count)
        (format "Total Window Descent Count: %d")
        (println)))
-
-(defn run
-  [run-type]
-  (aoc.utils/run-day 0 run-type process-part-one process-part-two))
