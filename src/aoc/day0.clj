@@ -3,7 +3,7 @@
             [ aoc.utils ]))
 
 (defn process-part-one [input]
-  (->> (identity input)
+  (->> input
        (clojure.string/split-lines)
        (map aoc.utils/parse-int)
        (partition 2 1)
@@ -17,7 +17,7 @@
        (println)))
 
 (defn process-part-two [input]
-  (->> (identity input)
+  (->> input
        (clojure.string/split-lines)
        (map aoc.utils/parse-int)
        (partition 3 1)
@@ -34,12 +34,4 @@
 
 (defn run
   [run-type]
-  (let [day-name "day0"
-        input-name (case run-type :test-data "test" :real-data "real")
-        input-path (format "aoc-input/%s.%s.txt" day-name input-name)
-        input (slurp input-path)]
-    (println (format "### Day 0 - Part 1 - %s" input-path))
-    (process-part-one input)
-    (println "")
-    (process-part-two input)
-    (println "")))
+  (aoc.utils/run-day 0 run-type process-part-one process-part-two))
