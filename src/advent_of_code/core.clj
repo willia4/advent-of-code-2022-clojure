@@ -7,8 +7,11 @@
 (defn -main
   "Runs the callenges"
   [& args]
-  (aoc.day0/run :test-data)
-  (aoc.day0/run :real-data)
-  ;; (aoc.day1/run :real-data)
+  ;; (aoc.day0/run :test-data)
+  ;; (aoc.day0/run :real-data)
+  (aoc.day1/run :test-data)
+  (aoc.day1/run :real-data)
+
   ;; (aoc.day2/run :test-data)
+  ;; (aoc.day2/run :real-data)
 )

@@ -1,7 +1,20 @@
 (ns aoc.utils
-  (:require [clojure.java.io]))
+  (:require [clojure.string]))
 
 (defn parse-int [ s ] (Integer/parseInt s))
+
+
+(defn chunk-lines-by-blank
+  "Given a seq of lines, assumes that chunks of lines are separated by a blank line
+   (a line containing only white space) and returns a seq of those chunks
+   (with each chunk being its own seq of lines)"
+  [lines]
+  (->> lines
+       (partition-by clojure.string/blank?)
+       (filter (fn [c]
+                 (not (and
+                       (= (count c) 1)
+                       (= (first c) "")))))))
 
 (defn input-path
   "Determines the path for a specific piece of test input"
