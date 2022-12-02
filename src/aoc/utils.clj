@@ -48,11 +48,11 @@
     (when part1
 
       (println (format "### Day %d - Part 1 - %s" day path))
-      (part1 data)
+      (println (str "Answer: " (part1 data)))
       (println ""))
 
     (when part2
       (println (format "### Day %d - Part 2 - %s" day path))
-      (part2 data)
+      (println (str "Answer: " (part2 data)))
       (println ""))
     )))

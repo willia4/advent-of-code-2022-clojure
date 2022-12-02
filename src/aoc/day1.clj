@@ -12,8 +12,7 @@
        (map (fn [chunk]
               (reduce + chunk)))
        (apply max)
-       (format "Largest Calorie Chunk: %d")
-       (println)))
+       (str)))
 
 (defn process-part-two [input]
   (->> input
@@ -27,5 +26,4 @@
        (reverse)
        (take 3)
        (reduce +)
-       (format "Largest 3 Calorie Chunks: %d")
-       (println)))
+       (str)))

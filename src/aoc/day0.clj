@@ -13,8 +13,7 @@
                 :not-descending)))
        (filter #(= :descending %))
        (count)
-       (format "Total Descent Count: %d")
-       (println)))
+       (str)))
 
 (defn process-part-two [input]
   (->> input
@@ -29,5 +28,4 @@
                 :not-descending)))
        (filter #(= :descending %))
        (count)
-       (format "Total Window Descent Count: %d")
-       (println)))
+       (str)))
