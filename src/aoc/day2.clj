@@ -31,7 +31,7 @@
 (defn score-round [move]
   (+ (score-throw (:p2 move)) (score-move move)))
 
-(defn process-p2-move-part1 [p1move p2symbol]
+(defn process-p2-move-part1 [_ p2symbol]
   (case p2symbol
     "X" :rock
     "Y" :paper
