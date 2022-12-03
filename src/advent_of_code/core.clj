@@ -2,9 +2,7 @@
   (:gen-class)
   (:require
    [aoc.utils]
-   [aoc.day0]
-   [aoc.day1]
-   [aoc.day2]))
+   [aoc.day0] [aoc.day1] [aoc.day2] [aoc.day3]))
 
 (def all-days [0 1])
 
