@@ -39,8 +39,8 @@
 (defn process-line [line]
   (->> (clojure.string/split line #",")
        (map parse-range)
-       vec)
-  )
+       vec))
+
 (defn process-part-one [input]
   (->> input
        (clojure.string/split-lines)
