@@ -16,7 +16,7 @@
 
 (defn either-fully-contains
   "Takes a 2-count vector of pseudo-ranges.
-   Returns true if either is fully contained by the other"
+   Returns truthy if either is fully contained by the other"
   [ranges]
   (or (fully-contains (first ranges) (second ranges))
       (fully-contains (second ranges) (first ranges))))
@@ -31,7 +31,7 @@
 
 (defn either-overlaps
   "Takes a 2-count vector of pseudo-ranges.
-   Returns true if either is partially contained by the other"
+   Returns truthy if either is partially contained by the other"
   [ranges]
   (or (overlaps (first ranges) (second ranges))
       (overlaps (second ranges) (first ranges))))
