@@ -4,7 +4,7 @@
    [aoc.utils]
    [aoc.day0] [aoc.day1] [aoc.day2] [aoc.day3] [aoc.day4] [aoc.day5]))
 
-(def all-days [0 1])
+(def all-days (vec (range 0 (inc 5))))
 
 (defn run-test
   ([day]
