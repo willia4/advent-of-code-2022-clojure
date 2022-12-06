@@ -13,7 +13,6 @@
   [len input]
   (->> input
        (partition len 1)
-       (vec)
        (keep-indexed (fn [idx v] (when (all-unique v) idx)))
        (first)
        (+ len)))
