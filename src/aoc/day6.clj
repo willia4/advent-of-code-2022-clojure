@@ -6,7 +6,7 @@
   "Takes a sequence and returns truthy if all items in the sequence are unique"
   [s]
   (let [s' (seq s)
-        s'' (set s)]
+        s'' (set s')]
     (= (count s') (count s''))))
 
 (defn find-marker
