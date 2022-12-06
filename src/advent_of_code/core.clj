@@ -2,9 +2,9 @@
   (:gen-class)
   (:require
    [aoc.utils]
-   [aoc.day0] [aoc.day1] [aoc.day2] [aoc.day3] [aoc.day4] [aoc.day5]))
+   [aoc.day0] [aoc.day1] [aoc.day2] [aoc.day3] [aoc.day4] [aoc.day5] [aoc.day6]))
 
-(def all-days (vec (range 0 (inc 5))))
+(def all-days (vec (range 0 (inc 6))))
 
 (defn run-test
   ([day]
