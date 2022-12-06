@@ -1,6 +1,6 @@
 (ns aoc.day6
-  (:require [ aoc.utils ]
-            [clojure.string ]))
+  (:require [aoc.utils]
+            [clojure.string]))
 
 (defn all-unique
   "Takes a sequence and returns truthy if all items in the sequence are unique"
